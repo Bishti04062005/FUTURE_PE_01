@@ -31,7 +31,11 @@ Since this application is built completely utilizing client-side technologies, n
 - https://bishti04062005.github.io/FUTURE_PE_01/
 ## PROMPTS USED:
 <img width="500" height="600" alt="image" src="https://github.com/user-attachments/assets/6693729c-7c40-4fa1-909c-efad4a4c32c1" />
+
+
 (Template image selected from Pinterest.)
+
+
 "Initialize a Git repository for this project. Create a new public GitHub repository named FUTURE_PE_01 under my account. Push the current code to the 'main' branch and then enable GitHub Pages so the site is live. Provide me with the GitHub repo URL and the live Pages link once finished."
 
 ## AI TOOLS USED:
