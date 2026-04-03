@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Copy AI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="page-container">
+    <header class="hero-section">
+      <div class="hero-image" style="background-image: url('assets/header_bg.png');"></div>
+      <div class="hero-content">
+        <h1>Local Copy AI</h1>
+        <p>Interactive storytelling. Generate authentic, high-converting copy for your local business.</p>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="form-section">
+        <div class="form-header">
+          <h2>Tell your story.</h2>
+          <p>Fill out the details below to generate a comprehensive copy pack.</p>
+        </div>
+        
+        <form id="generatorForm">
+          <div class="input-group">
+            <label for="businessName">Business Name</label>
+            <input type="text" id="businessName" placeholder="e.g., Drape & Glow" required>
+          </div>
+          
+          <div class="input-group">
+            <label for="niche">Niche / Industry</label>
+            <input type="text" id="niche" placeholder="e.g., Traditional Beauty Studio" required>
+          </div>
+          
+          <div class="input-group">
+            <label for="usp">Unique Value Proposition</label>
+            <textarea id="usp" rows="3" placeholder="e.g., We make every woman shine like a bride with affordable luxury styling." required></textarea>
+          </div>
+          
+          <div class="input-group">
+            <label for="audience">Target Audience</label>
+            <input type="text" id="audience" placeholder="e.g., Women aged 18-40 in Ramavaram" required>
+          </div>
+          
+          <button type="submit" class="generate-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12c-2.4 0-4.6-1.6-4.6-4.6M3 12c2.4 0 4.6 1.6 4.6 4.6"/><path d="M12 3c0 2.4-1.6 4.6-4.6 4.6M12 21c0-2.4 1.6-4.6 4.6-4.6"/><circle cx="12" cy="12" r="2"/></svg>
+            Generate Copy Output
+          </button>
+        </form>
+      </section>
+
+      <section class="results-section hidden" id="resultsSection">
+        <div class="results-card dark-mode">
+          <div class="results-header">
+            <div class="tabs">
+              <button class="tab-btn active" data-target="simulation">Simulated Output</button>
+              <button class="tab-btn" data-target="prompt">Master Prompt System</button>
+            </div>
+            <button id="copyBtn" class="copy-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copy Text
+            </button>
+          </div>
+          <div class="results-body">
+            <div id="simulation" class="tab-content active">
+              <div id="simulationOutput" class="markdown-body"></div>
+            </div>
+            <div id="prompt" class="tab-content">
+              <div id="promptOutput" class="markdown-body"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer class="app-footer">
+      <p>Built for high-converting local engagement.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
