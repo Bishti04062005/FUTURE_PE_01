@@ -26,3 +26,5 @@ Since this application is built completely utilizing client-side technologies, n
 - **Vanilla CSS**
 - **Vanilla JavaScript** 
 - **Marked.js** (loaded via CDN) to dynamically parse the Markdown structures into clear HTML.
+
+##Live link: https://bishti04062005.github.io/FUTURE_PE_01/
